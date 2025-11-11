@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     dist.simulateBinSmearing(50, 1000, c3);
     TH1D* hMean = dist.getLastMeanHistogram();  
     TH1D* hSmear = dist.getLastSmearHistogram(); 
-    dist.compareChi2(hMean, hSmear); //mi stampa sul terminale i 2 chi quadro per hMean e  hSmearMean
+    dist.compareChi2(hMean, hSmear); //mi stampa sul terminale i 2 chi-quadro per hMean e  hSmearMean
    
 
 
