@@ -22,12 +22,12 @@ public:
     Distribution(double k_=5.2, double phi_=1.8, double b_=0.2, double xmin_=0, double xmax_=2);
 
 
-       // Genera nRun istogrammi Monte Carlo e ritorna i contenuti dei bin
-    std::vector<std::vector<double>> generateMultipleRuns(int nEvents, int nBins, int nRuns) const;
+// Genera nRun istogrammi Monte Carlo e ritorna i contenuti dei bin
+std::vector<std::vector<double>> generateMultipleRuns(int nEvents, int nBins, int nRuns) const;
 
-    // Ritorna i valori teorici della funzione nei centri dei bin
-    std::vector<double> getFunctionValuesInBins(int nBins) const;
-    // Calcola la media dei bin su più run
+// Ritorna i valori teorici della funzione nei centri dei bin
+std::vector<double> getFunctionValuesInBins(int nBins) const;
+// Calcola la media dei bin su più run
 std::vector<double> computeBinMeans(const std::vector<std::vector<double>>& allBinContents) const;
 
 // Calcola la deviazione standard dei bin su più run
