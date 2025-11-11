@@ -115,7 +115,7 @@ std::vector<double> Distribution::computeBinStdDev(const std::vector<std::vector
         hMean->SetBinError(i + 1, binStdDev[i]);
     }
 
-    // Normalizzazione (opzionale)
+    // Normalizzazione 
     double integralFunc = func->Integral(xmin, xmax);
     double integralHist = hMean->Integral("width");
     if (integralHist > 0)
